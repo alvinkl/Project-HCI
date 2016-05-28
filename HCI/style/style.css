@@ -1,18 +1,62 @@
 body {
-	margin-top: 0;
+	margin: 0;
+	font-family: 'quicksandlight', 'quicksandlight_italic';
 }
 
 main {
     flex: 1 0 auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 header {
-	background-color: black;
-/*	opacity: 0.2;*/
+	background-image: url('../img/header-bg.jpg');
+	height: 700px;
+	width: 100%;
+	background-size: cover;
+}
+
+header #header-desc {
+	width: 50%;
+	height: 30%;
+	padding: 15% 25%;
+}
+
+header #header-desc #title {
+	font-size: 50px;
+	color: white;
+	font-weight: 600;
+}
+
+header #header-desc #motto {
+	font-size: 25px; 
+	color: white;
+	opacity: 0.7;
+}
+
+header #header-desc #catalog {
+	border: 2px rgba(255,255,255,.8) solid;
+	position: absolute;
+	height: 20px;
+	width: 76px;
+	padding: 15px;
+	margin: 5% 20%;
+}
+
+header #header-desc #catalog a {
+	color: white;
+	font-weight: 300;
+}
+
+header #header-desc #catalog a:hover {
+	font-weight: 800;
 }
 
 nav {
 	display: inline;
+	float: right;
 }
 
 nav ul {
@@ -24,13 +68,18 @@ nav ul {
 
 nav ul li {
 	float: left;
+	font-size: 20px;
 }
 
 nav ul li a {
 	display: block;
 	padding: 14px 16px;
 	color: white;
-	text-decoration: none;
+}
+
+nav ul li a span {
+	border: 2px white solid;
+	padding: 5px;
 }
 
 nav ul li a:hover {
@@ -43,7 +92,6 @@ nav ul li a:hover {
  	display: flex;
     min-height: 100vh;
     flex-direction: column;
-    /*font-family: 'quicksandlight', 'quicksandlight_italic';*/
 }
 
 section {
@@ -57,7 +105,7 @@ section {
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -83,6 +131,7 @@ footer #footer-copyright {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	color: white;
 }
 
 footer .social-media-container {
