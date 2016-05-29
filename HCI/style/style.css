@@ -19,9 +19,10 @@ header {
 }
 
 header #header-desc {
-	width: 50%;
-	height: 30%;
+	width: inherit;
+	height: 295px;
 	padding: 15% 25%;
+	background-color: rgba(0,0,0,0.5);
 }
 
 header #header-desc #title {
@@ -33,16 +34,16 @@ header #header-desc #title {
 header #header-desc #motto {
 	font-size: 25px; 
 	color: white;
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 header #header-desc #catalog {
-	border: 2px rgba(255,255,255,.8) solid;
+	border: 1.5px rgba(255,255,255,.8) solid;
 	position: absolute;
 	height: 20px;
 	width: 76px;
 	padding: 15px;
-	margin: 5% 20%;
+	margin: 5% 0;
 }
 
 header #header-desc #catalog a {
@@ -78,7 +79,7 @@ nav ul li a {
 }
 
 nav ul li a span {
-	border: 2px white solid;
+	border: 1.5px white solid;
 	padding: 5px;
 }
 
@@ -87,7 +88,7 @@ nav ul li a:hover {
 }
 
 #container {
-	max-width: 1024px;
+	max-width: 100%;
 	margin: 0 auto;
  	display: flex;
     min-height: 100vh;
@@ -121,10 +122,9 @@ nav ul li:hover .dropdown-content{
 
 footer {
 	background: black;
-	width: 80%;
+	width: 100%;
 	height: 100px;
 	margin-top: 20px;
-	position:absolute;
 }
 
 footer #footer-copyright {
