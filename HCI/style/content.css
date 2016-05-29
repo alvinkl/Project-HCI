@@ -32,6 +32,8 @@
 .box-list .image-holder img {
 	width: 100%;
 	height: 240px;
+	width: 80%;
+	margin-left: 10%;
 }
 
 .box-list .description {
@@ -46,23 +48,46 @@
 }
 
 .box-list {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
 .box-list:hover, .box-list:focus, .box-list:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+
+@media screen and (max-width: 500px) {
+	#feature {
+		font-size: 30px;
+	}
+
+	#product-list {
+		width: 100%;
+		display: inline;
+	}
+
+	.box-list {
+		height: 480px;
+		width: 80%;
+		margin: 2em 5%;
+		padding: 15px;
+		float: left;
+	}
+
+	.box-list .image-holder img {
+		height: 240px;
+	}
 }
