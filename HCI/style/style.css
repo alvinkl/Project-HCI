@@ -145,6 +145,55 @@ footer .social-media-container > a {
 	color: white;
 }
 
+#product_list{
+	overflow: hidden;
+	margin:auto 50px;
+
+
+}
+
+.product_holder{
+	width:33.3%;
+	height: 100%;
+	float:left;
+
+
+}
+
+.product_holder .product_title{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+
+.product_holder .product_img{
+	width: 100%;
+	height: 30%;
+
+
+
+}
+.product_holder .product_img img{
+	width: 100%;
+	height: 100%;
+}
+
+.product_holder .product_price{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	font-size: 50px;
+}
+.product_holder .product_description{
+	width: 100%;
+	height: 30%;
+	padding: 25px;
+	text-align: left;
+	color: black;
+}
+
 @media screen and (max-width: 500px) {
 	body {
 		max-width: 500px;
