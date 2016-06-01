@@ -1,0 +1,251 @@
+header {
+	background-image: url('../img/header-bg.jpg');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+header #header-desc {
+	position: static;
+	width: 60%;
+	height: 23%;
+	padding: 20%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+header #header-desc #title {
+	font-size: 50px;
+	color: white;
+	font-weight: 600;
+}
+
+#logo {
+	position: absolute;
+	background-image: url("../img/Logo/NanoLogo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30%;
+	width: 20%;
+	transform: scale(.6,.6);
+	top: 0%;
+	left: 0%;
+}
+
+header #header-desc #motto {
+	font-size: 25px; 
+	color: white;
+	opacity: 0.6;
+}
+
+header #header-desc button {
+	background-color: rgba(0,0,0,0);
+	color: #e7e7e7;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	padding: 1%;
+	left:32%;
+	margin-top: 20px;
+	border: 1px solid #e7e7e7;
+
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+#catalog:hover {
+	background-color: rgba(231,231,231,.3);
+}
+
+header #header-logo{
+	height: 300px;
+	float:left;
+
+}
+
+header #header-logo img{
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	display: block;
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+	font-size: 20px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 14px 16px;
+	color: white;
+}
+
+nav ul li a span {
+	border: 1.5px white solid;
+	padding: 5px;
+}
+
+nav ul li a:hover {
+	color: #C0C1C2;
+}
+
+#container {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+nav ul li:hover .dropdown-content{
+	display: block;
+}
+
+
+section {
+	width: 100%;	
+	margin: 0 auto;
+}
+
+
+#content {
+	padding-bottom:100px; 
+}
+
+footer {
+	background-color: rgba(0,0,0,.9);
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+}
+
+footer #footer-copyright {
+	color: white;
+}
+
+footer .social-media-container {
+	width: 100%;
+	height: 80%;
+	padding: 5px 0 5px 35%;
+}
+
+footer .social-media-container > img {
+	height: 35%;
+}
+
+footer .social-media-container > a {
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		max-width: 500px;
+	}
+
+
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul li a {
+		text-align: center;
+		display: block;
+		padding: 10px 0 10px 16px;	
+		text-decoration: none;
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+	}
+
+	nav ul li a span {
+		border: 1.5px white solid;
+	}
+
+	header {
+		height: 700px;
+		width: 100%;
+	}
+
+
+	#logo {
+		height: 40%;
+		width: 40%;
+		transform: scale(.4,.4);
+		top: 50%;
+		left: 30%;
+	}
+
+
+	header #header-desc {
+		width: 100%;
+		height: 80%;
+		padding: 14%;
+	}
+
+	header #header-desc #title {
+		font-size: 45px;
+		color: white;
+		font-weight: 600;
+		margin-top: 70%;
+		position: absolute;
+		left: 20%;
+	}
+
+	header #header-desc #motto {
+		font-size: 15px; 
+		color: white;
+		opacity: 0.6;
+		margin-top: 80%;
+		margin-left: 5%;
+		position: absolute;
+	}
+
+	header #header-desc #catalog {
+		position: absolute;
+		bottom: 0;
+		left: 40%;
+		padding: 3%;
+	}
+
+	footer #footer-copyright {
+		position: inherit;
+		right: 0;
+		bottom: 0;
+		color: white;
+	}
+
+	footer .social-media-container {
+		width: 100%;
+		height: 80%;
+		padding: 5px 0 5px 15%;
+	}
+}
