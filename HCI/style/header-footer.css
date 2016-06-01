@@ -100,14 +100,6 @@ nav ul li a:hover {
 	color: #C0C1C2;
 }
 
-#container {
-	max-width: 100%;
-	margin: 0 auto;
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
 .dropdown-content {
 	display: none;
 	position: absolute;
