@@ -8,6 +8,7 @@
 	<script src="script/jquery.js"></script>
 	<link rel="stylesheet" href="font/quicksand/fonts-quicksand.css">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/header-footer.css">
 	<link rel="stylesheet" href="style/content.css">
 	<link rel="stylesheet" href="style/imgslider.css">
 	<link rel="stylesheet" href="style/back-Top.css">
@@ -16,6 +17,7 @@
 
 	
 	<header>
+		<div id="logo"></div>
 		<nav>	
 			<ul>
 				<li><a href="">Home</a></li>
@@ -35,7 +37,7 @@
 		<div id="header-desc">
 			<div id="title">Nano Electronic</div>
 			<div id="motto">brings you the best shopping experience</div>
-			<div id="catalog"><a href="#">CATALOG</a></div>
+			<button id="catalog">CATALOG</button>
 		</div>
 	</header>
 
@@ -52,63 +54,72 @@
 				</div>
 			</div>
 			
-			<div id="feature">Featured</div>
-
+			<div name="feature" id="feature">Featured</div>
+			
 			<div id="product-list">
-				<div class="box-list">
-					<div class="title">Handphone</div>
-					<div class="image-holder">
-						<img src="img/htc-thumb.jpg">
+				<a href="#">
+					<div class="box-list">
+						<div class="title">Handphone</div>
+						<div class="image-holder">
+							<img src="img/htc-thumb.jpg">
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempora, dolor sunt nesciunt magnam. Voluptas quibusdam tempora cumque nobis rerum animi natus nesciunt? Cupiditate, suscipit dolorum delectus alias enim, esse!
+						</div>
 					</div>
-					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempora, dolor sunt nesciunt magnam. Voluptas quibusdam tempora cumque nobis rerum animi natus nesciunt? Cupiditate, suscipit dolorum delectus alias enim, esse!
+				</a>
+				<a href="#">
+					<div class="box-list">
+						<div class="title">Laptop</div>
+						<div class="image-holder">
+							<img src="img/hp-icon.jpg" alt="">
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, consequatur ipsum ducimus cupiditate numquam nobis, pariatur molestiae fugiat, maiores velit accusamus nesciunt ab deserunt nam delectus rerum quae. Iure, et.
+						</div>
 					</div>
-				</div>
-				<div class="box-list">
-					<div class="title">Laptop</div>
-					<div class="image-holder">
-						<img src="img/hp-icon.jpg" alt="">
+				</a>
+				<a href="#">
+					<div class="box-list">
+						<div class="title">Computer</div>
+						<div class="image-holder">
+							<img src="img/surface-thumb.jpg" alt="">
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repellat quisquam ea nemo magnam. Aspernatur nobis facere eaque. Hic, doloribus placeat eveniet consectetur odit nemo quasi. Mollitia deserunt asperiores sed.
+						</div>
 					</div>
-					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, consequatur ipsum ducimus cupiditate numquam nobis, pariatur molestiae fugiat, maiores velit accusamus nesciunt ab deserunt nam delectus rerum quae. Iure, et.
-					</div>
-				</div>
-				<div class="box-list">
-					<div class="title">Computer</div>
-					<div class="image-holder">
-						<img src="img/surface-thumb.jpg" alt="">
-					</div>
-					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repellat quisquam ea nemo magnam. Aspernatur nobis facere eaque. Hic, doloribus placeat eveniet consectetur odit nemo quasi. Mollitia deserunt asperiores sed.
-					</div>
+				</a>
+
+
+			</section>
+			<footer>
+				<div class="social-media-container">
+					<img src="img/social media/facebook.png" alt="">
+					<a href="">Facebook</a>
+					<img src="img/social media/twitter.png" alt="">
+					<a href="">Twitter</a>
+					<img src="img/social media/instagram.png" alt="">
+					<a href="">Instagram</a>
 				</div>
 
-			</div>
-
-		</section>
-
-	</section>
-	<footer>
-		<div class="social-media-container">
-			<img src="img/social media/facebook.png" alt="">
-			<a href="">Facebook</a>
-			<img src="img/social media/twitter.png" alt="">
-			<a href="">Twitter</a>
-			<img src="img/social media/instagram.png" alt="">
-			<a href="">Instagram</a>
+				<div id="footer-copyright">
+					© 2014 Copyright
+				</div>
+			</footer>
 		</div>
-
-		<div id="footer-copyright">
-			© 2014 Copyright
-		</div>
-	</footer>
-</div>
-
-
-<script src="script/imgslider.js"></script>
-<script src="script/back-Top.js"></script>
-<a href="#" class="back-to-top">
-	back to top
-</a>
-</body>
+		<a href="#" class="back-to-top">
+			back to top
+		</a>
+	</div>
+	<script src="script/imgslider.js"></script>
+	<script src="script/back-Top.js"></script>
+	<script>
+		$("#catalog").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#feature").offset().top
+			}, 1000);
+		});
+	</script>
+</body>	
 </html>
