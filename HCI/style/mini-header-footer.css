@@ -72,10 +72,12 @@ nav ul li:hover .dropdown-content{
 
 
 footer {
+	position: absolute;
 	background-color: rgba(0,0,0,.9);
 	width: 100%;
 	height: 100px;
-	margin-top: 20px;
+	margin-top: 100px;
+	bottom: -300x;
 }
 
 footer #footer-copyright {
