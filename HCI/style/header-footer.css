@@ -29,6 +29,7 @@ header #header-desc #title {
 	transform: scale(.6,.6);
 	top: 0%;
 	left: 0%;
+	z-index: 100;
 }
 
 header #header-desc #motto {
@@ -74,7 +75,7 @@ header #header-desc button {
 #header-login form {
 	position: absolute;
 	left: 30%;
-	top: 40%;
+	top: 35%;
 	text-align: center;
 	padding: 5% 0;
 	width: 40%;
@@ -82,42 +83,31 @@ header #header-desc button {
 
 #background-blur {
 	position: absolute;
-	left: 30%;
-	top: 40%;
 	text-align: center;
-	padding: 5% 0;
-	width: 40%;
-	height: 30%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url('../img/header-bg.jpg');
-	border-radius: 10%;
 	background-position: inherit;
 	background-attachment: fixed;
 	background-size: cover;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+	z-index: 0;
 }
 
 #background-dark {
 	position: absolute;
-	left: 30%;
-	top: 40%;
+	left: 0;
+	top: 0;
 	text-align: center;
-	padding: 5% 0;
-	width: 40%;
-	height: 30%;
+	width: 100%;
+	height: 100%;
 	background-color: rgba(0,0,0,.6);
-	border-radius: 10%;
-	background-position: inherit;
-	background-attachment: fixed;
-	background-size: cover;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
 }
 
 
@@ -150,6 +140,44 @@ header input {
 
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
+}
+
+#social-media {
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	bottom: 1%;
+	z-index: 200;
+	text-align: center;
+	padding-left: 39%;
+	box-sizing: border-box;
+}
+
+#social-media #facebook {
+	float: left;
+	height: 100%;
+	width: 10%;
+	padding: 0 1%;
+}
+
+#social-media #twitter {
+	float: left;
+	height: 90%;
+	width: 10%;
+	padding: 0 1%;
+}
+
+#social-media #instagram {
+	float: left;
+	height: 100%;
+	width: 10%;
+	padding: 0 1%;
+}
+
+#social-media img {
+	height: 100%;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
 
 /* LOGIN HEADER */
