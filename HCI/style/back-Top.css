@@ -12,12 +12,11 @@
 	border-right: 5px solid transparent;
 	border-bottom: 10px solid black;
 	background-color: inherit;
-	/*color: #333;*/
-	color: red;
+	color: #333;
 }
 
 @media screen and (max-width: 500px) {
 	.back-to-top {
-		margin: 0 25%;
+		margin: 0;
 	}
 }

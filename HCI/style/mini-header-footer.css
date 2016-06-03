@@ -19,6 +19,7 @@ nav {
 	position: relative;
 	display: block;
 	left: 30%;
+	width: 70%;
 }
 
 nav ul {
@@ -79,6 +80,7 @@ footer {
 	height: 100px;
 	margin-top: 100px;
 	bottom: -300x;
+	box-sizing: border-box;
 }
 
 footer #footer-copyright {
