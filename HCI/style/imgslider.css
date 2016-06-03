@@ -14,7 +14,7 @@
   display: inline-block;
   display: none;
   background-size: cover;
-  transition-duration: 1000;
+  overflow: hidden;
 }
 
 /*.img-slider img {

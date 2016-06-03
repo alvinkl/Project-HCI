@@ -69,8 +69,8 @@ a {
 }
 
 .box-list:hover, .box-list:focus, .box-list:active {
-	-webkit-transform: translateY(-8px);
-	transform: translateY(-8px);
+	-webkit-transform: translateY(-2px);
+	transform: translateY(-2px);
 }
 
 #product_list{
@@ -78,7 +78,7 @@ a {
 	margin:auto 50px;
 }
 
-.box-list{
+.box-list.big {
 	width:33.3%;
 	height: 100%;
 	float:left;
