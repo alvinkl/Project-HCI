@@ -101,3 +101,25 @@ footer .social-media-container > img {
 footer .social-media-container > a {
 	color: white;
 }
+
+@media screen and (max-width: 500px) {
+	nav{
+		left:0%;
+		width: 100%;
+
+	}
+	nav ul li{
+		float:none;
+		text-align: center;
+		padding: 1px;
+	}
+	header img{
+		left: 43%;
+	}
+	footer .social-media-container{
+		padding: 5px;
+		position: relative;
+		left:20%;
+	}
+}
+

@@ -59,10 +59,6 @@ header #header-desc button {
 }
 
 /* LOGIN HEADER */
-#login {
-
-}
-
 #header-login {
 	position: static;
 	width: 54%;
@@ -177,7 +173,7 @@ header input {
 #social-media img {
 	height: 100%;
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 /* LOGIN HEADER */
@@ -367,4 +363,115 @@ header #header-logo img{
 			height: 80%;
 			padding: 5px 0 5px 15%;
 		}
+
+		/* LOGIN HEADER */
+
+		#header-login {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			padding: 23%;
+			top: 0%;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+
+		element.style {
+			left: 30%;
+			top: 10%;
+		}
+	
+		#header-login > a > #logo {
+			position: absolute;
+			transform: scale(.6,.6);
+			margin-left: -11%;
+			margin-top: -8%;
+			z-index: 300;
+		}
+
+		#header-login form {
+			position: relative;
+			left: 5%;
+			top: 0%;
+			text-align: center;
+			padding: 50% 0;
+			width: 40%;
+		}
+
+		.remember_me {
+			margin-left: 80%;
+			height: 10%;
+			width: 100%;
+		}
+
+		.submit {
+			margin-left: 110%;
+		}
+
+		#header-login input {
+			padding: 10% 0 ;
+		}
+
+		#background-blur {
+			position: absolute;
+			text-align: center;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('../img/header-bg.jpg');
+			background-position: inherit;
+			background-attachment: fixed;
+			background-size: cover;
+			-webkit-filter: blur(15px);
+			-moz-filter: blur(15px);
+			-o-filter: blur(15px);
+			-ms-filter: blur(15px);
+			filter: blur(15px);
+			z-index: 0;
+			box-sizing: border-box;
+		}
+
+		header input {
+			background-color: rgba(0,0,0,0);
+			color: #e7e7e7;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			padding: 1%;
+			left:32%;
+			border: 1px solid #e7e7e7;
+
+			-webkit-transition-duration: 0.4s;
+			transition-duration: 0.4s;
+		}
+
+		#social-media {
+			bottom: 20%;
+			padding-left: 31%;
+			box-sizing: border-box;
+		}
+
+		#social-media #facebook {
+			padding: 0 5%;
+		}
+
+		#social-media #twitter {
+			padding: 0 5%;
+		}
+
+		#social-media #instagram {
+			padding: 0 5%;
+		}
+
+		#social-media img {
+			height: 100%;
+			-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+			filter: grayscale(100%);
+		}
+
+		/* LOGIN HEADER */
+
 	}
