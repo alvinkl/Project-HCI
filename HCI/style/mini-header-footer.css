@@ -34,7 +34,7 @@ nav ul li {
 	font-size: 20px;
 }
 
-nav ul li a {
+nav ul li a, nav ul li > span {
 	display: block;
 	padding: 5px 16px 14px 16px;
 	color: white;
